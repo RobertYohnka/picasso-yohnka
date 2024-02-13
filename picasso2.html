@@ -61,15 +61,30 @@
    </div>
 
     <footer>
+<div>
     <p>Please fill out this form.</p>
-    <form>        
-        <label for="text">Name</label>    
-            <input type="text" value=""Text" />
-        <label for="text">Email</label>
-            <input type="email" value=""Email" />
-            <input type="submit" value="Submit" />
-        <form target="_blank" action="./redirect.html" method="Post"></form>
+    <form action="./redirect.html" target="_blank">
+        <!-- <label for="text">Name</label>     -->
+        <input 
+        class="text"
+        type="text"
+        placeholder="First Name"
+        required
+        />
+        <input
+        class="text email-text"
+        type="email"
+        placeholder="Email"
+        required
+        />
+        <input class="button" type="submit" value="Submit" />
+</div>        
+        <!-- <label for="text">Email</label> -->
+            <!-- <input type="email" value=""Email" /> -->
+            <!-- <input type="submit" value="Submit" /> -->
+        <!-- <form action="./redirect.html" target="_blank" ></form> -->
     </form>
+</div>
     </footer>
 </body>
 </html>
