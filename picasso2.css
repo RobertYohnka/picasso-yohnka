@@ -12,7 +12,7 @@ html {
     background-color: rgb(161, 179, 243);
 }
 
-
+/* These are the circles at the top */
 .moon-container {
     display: flex;
     flex-wrap: wrap;
@@ -42,11 +42,11 @@ html {
   .mh4 {
     background-color: #a9a56b
   }
-
+/* This is the first flex container */
   .flex-container {
     height: 300px;
     display: flex;
-    flex-direction: row;
+    flex-direction: wrap;
     background-color: lightgray;
     justify-content: end;
     align-items: center;
@@ -109,7 +109,7 @@ html {
 .item1:nth-of-type(15) {
     align-self: start;
 }
-
+/* This is an example of z-index that I worked with on-line. I need to work on this concept more */
 .wrapper {
     position: relative;
   }
@@ -123,21 +123,23 @@ html {
     margin-bottom: 1em;
     margin-top: 2em;
   }
-  .gold-box {
-    position: relative;
-    /* z-index: 3; put .gold-box above .green-box and .dashed-box */
-    background: gold;
-    width: 5%;
-    left: 60px;
-    top: 5em;
-  }
+ 
   .green-box {
     position: absolute;
-    z-index: 2; /* put .green-box above .dashed-box */
+    z-index: 2;
     background: lightgreen;
     width: 20%;
     left: 65%;
     top: -55px;
     height: 7em;
     opacity: 0.9;
+  }
+
+  /* Need to fix screen settings here */
+  @media only screen and (min-width: 480px) and (max-width: 1050px) {
+    body {
+      width: 100%;
+      padding-left: 5px;
+      flex-direction: column; 
+    }
   }
