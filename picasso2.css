@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: rgb(161, 179, 243);
+}
+
+
+.moon-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 150px;
+    flex-direction: flex-end;
+    } 
+.moon-holder {
+    margin-right: 5px;
+    width: 50px;    
+    border-radius: 50%;
+    padding: 20px;
+    align-items: center;
+    
+  } 
+  .mh1 {
+    background-color: #f4f1c9;
+    border: 20px;
+    border-color: rgb(56, 67, 67);
+  }
+  .mh2 {
+    background-color: #e1dfc3
+  }
+  .mh3 {
+    background-color: #b8b698
+  }
+  .mh4 {
+    background-color: #a9a56b
+  }
+
+  .flex-container {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    justify-content: end;
+    align-items: center;
+  }
+
+ .item {
+    width: 100px;
+    height: 100px;
+    background: #254de5;
+    margin: 10px;
+   
+  }
+
+.item:nth-of-type(3) {
+    align-self: end;
+}
+
+.item:nth-of-type(12) {
+    align-self: start;
+}
+
+.flex-container2 {
+    /* z-index: 4; */
+    background-color: aquamarine;
+    height: 100px;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.item1 {
+    width: 100px;
+    height: 50px;
+    background: #e525a8;
+    margin: 10px;
+   
+  }
+
+.item1:nth-of-type(3) {
+    align-self: end;
+}
+
+.item1:nth-of-type(12) {
+    align-self: start;
+}
+
+.item1 {
+    width: 100px;
+    height: 100px;
+    background: #a2769f;
+    margin: 10px;
+   
+  }
+
+.item1:nth-of-type(6) {
+    align-self: end;
+}
+
+.item1:nth-of-type(15) {
+    align-self: start;
+}
+
+.wrapper {
+    position: relative;
+  }
+
+.dashed-box {
+    position: top;
+    z-index: 1;
+    border: dashed;
+    height: 2em;
+    top: -150px;
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+  .gold-box {
+    position: relative;
+    /* z-index: 3; put .gold-box above .green-box and .dashed-box */
+    background: gold;
+    width: 5%;
+    left: 60px;
+    top: 5em;
+  }
+  .green-box {
+    position: absolute;
+    z-index: 2; /* put .green-box above .dashed-box */
+    background: lightgreen;
+    width: 20%;
+    left: 65%;
+    top: -55px;
+    height: 7em;
+    opacity: 0.9;
+  }
